@@ -1,11 +1,16 @@
 .jobs {
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 .job {
     border: 1px solid #000;
     padding: 20px;
     box-shadow: 10px 10px #ff7e28;
+    margin: 50px;
+}
+.job:hover {
+    box-shadow: -10px -10px #ff7e28;
+    cursor: pointer;
 }
 .apply_btn {
     border: 1px solid #000;
