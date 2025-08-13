@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { format } from "date-fns";
+import "../css/pages/jobs.css"
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -14,14 +16,23 @@ const Jobs = () => {
   }, []);
 
   return (
-    <div>
+    <div className="jobs">
       <h1>Jobs</h1>
       {jobs.length > 0 ? (
-        <ul>
+        <div>
           {jobs.map((job) => (
-            <li key={job.id || job._id}>{job.title}</li>
+            <div class="job" key={job.id || job._id}>
+                <button className="apply_btn right">Apply</button>
+                <h3>{job.company}</h3>
+                <h4>Title: {job.title}</h4>
+                <hr />
+                <p>
+                    {job.description}
+                </p>
+                (Posted: {format(new Date(job.posted), "MMMM dd, yyyy")} - Deadline: {format(new Date(job.deadline), "MMMM dd, yyyy")})
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <p>No jobs available</p>
       )}

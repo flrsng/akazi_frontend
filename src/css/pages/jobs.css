@@ -1,0 +1,14 @@
+.jobs {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.job {
+    border: 1px solid #000;
+    padding: 20px;
+    box-shadow: 10px 10px #ff7e28;
+}
+.apply_btn {
+    border: 1px solid #000;
+    padding: 20px;
+    box-shadow: 10px 10px #ff7e28;
+}
