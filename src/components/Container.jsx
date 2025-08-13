@@ -1,5 +1,5 @@
 import React from 'react';
-import "./css/container.css"
+import "../css/container.css"
 
 function Container() {
   return (

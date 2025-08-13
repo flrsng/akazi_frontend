@@ -1,9 +1,9 @@
 // src/Example.jsx
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleDarkMode } from './store/uiSlice';
+import { toggleDarkMode } from '../store/uiSlice';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useEffect } from 'react';
-import "./css/dark.css"
+import "../css/dark.css"
 
 export default function DarkMode() {
   const dispatch = useDispatch();
