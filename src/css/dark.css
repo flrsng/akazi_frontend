@@ -1,0 +1,20 @@
+/* Light mode (default) */
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease; /* ← smooth transition */
+}
+
+/* Dark mode */
+.dark body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
