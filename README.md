@@ -10,3 +10,32 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Akazi - Job Board
+
+![Akazi Logo](https://via.placeholder.com/150x50?text=Akazi)  
+
+Akazi is a modern, user-friendly job board connecting job seekers with employers. Our platform helps candidates find jobs that match their skills while allowing employers to discover top talent efficiently.
+
+---
+
+## Features
+- Browse available jobs across multiple industries
+- Apply directly from the platform
+- Employer and candidate-friendly interface
+- Responsive design for mobile and desktop
+- Clean and professional UI
+
+---
+
+## Demo
+> Currently, no jobs are posted. Check back soon for live opportunities!
+
+---
+
+## Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/flrsng/akazi_frontend
+cd akazi-job-board (Frontend)
