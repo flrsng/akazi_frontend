@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
 
+  // Directly use backend URL
+  const endpoint = "http://localhost:4000/jobs";
+
   useEffect(() => {
-    fetch("http://localhost:4000/jobs") // backend port updated
+    fetch(endpoint)
       .then((res) => res.json())
-      .then((data) => {
-        console.log("Fetched jobs:", data); // Debugging
-        setJobs(data);
-      })
+      .then((data) => setJobs(data))
       .catch((err) => console.error("Error fetching jobs:", err));
   }, []);
 
