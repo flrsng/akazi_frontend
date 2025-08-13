@@ -1,13 +1,8 @@
-.jobs {
+.applications {
     margin-right: 20%;
     margin-left: 20%;
 }
-.job {
-    border: 1px solid #000;
-    padding: 20px;
-    box-shadow: 10px 10px #ff7e28;
-}
-.apply_btn {
+.application {
     border: 1px solid #000;
     padding: 20px;
     box-shadow: 10px 10px #ff7e28;

@@ -24,12 +24,13 @@ const Jobs = () => {
             <div class="job" key={job.id || job._id}>
                 <button className="apply_btn right">Apply</button>
                 <h3>{job.company}</h3>
-                <h4>Title: {job.title}</h4>
+                <h4><i>Title: {job.title}</i></h4>
                 <hr />
                 <p>
                     {job.description}
                 </p>
-                (Posted: {format(new Date(job.posted), "MMMM dd, yyyy")} - Deadline: {format(new Date(job.deadline), "MMMM dd, yyyy")})
+                <i>(Posted: {format(new Date(job.posted), "MMMM dd, yyyy")} - Deadline: {format(new Date(job.deadline), "MMMM dd, yyyy")})</i>
+                <p><a href={`/jobs/${job.id}`}>More details</a></p>
             </div>
           ))}
         </div>
