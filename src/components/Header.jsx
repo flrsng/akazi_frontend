@@ -19,7 +19,7 @@ const Header = () => {
 
       {/* Right: Login */}
       <div className="login">
-        <button>Login</button>
+        <a href="/login" class="">Login</a>
       </div>
     </header>
   );
